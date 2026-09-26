@@ -1,23 +1,88 @@
 aid: auranetworksystems
+
 name: Auranetworksystems
-description: 'Auranetworksystems is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: http://static1.squarespace.com/static/60e5e3a2bc062b6b10b26d85/t/6279c4572ed9a06538d504a1/1652147287206/AURA_dark.png?format=1500w
+
+description: Auranetworksystems, operating as AURA Network Systems, provides aviation communications infrastructure and services for both crewed
+  and uncrewed aircraft. Leveraging licensed aviation spectrum, the company delivers secure, reliable voice and data solutions to enable advanced
+  autonomy and FAA‑compliant operations across the National Airspace System. Their offerings include spectrum management, ground and airborne
+  radio systems, and a nationwide network supporting BVLOS missions and other advanced aviation use cases.
+
 url: https://raw.githubusercontent.com/api-evangelist/auranetworksystems/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Aviation
+- Communications
+- Infrastructure
+- Unmanned
+- BVLOS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/auranetworksystems-hosts.yml
+- type: Vendors
+  url: vendors/auranetworksystems-vendors.yml
+- type: Newsroom
+  url: https://auranetworksystems.com/news
+- type: GitHubOrganization
+  url: https://github.com/auranetworksystems
+- type: DomainSecurity
+  url: security/auranetworksystems-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/auranetworksystems
+  url: https://auranetworksystems.com
+- type: Documentation
+  url: https://auranetworksystems.com/solutions
+- type: APIReference
+  url: https://auranetworksystems.com/infrastructure
+- type: GettingStarted
+  url: https://auranetworksystems.com/company
+- type: Support
+  url: https://auranetworksystems.com/contact
+- type: Blog
+  url: https://auranetworksystems.com/news?category=Blog
+- type: TermsOfService
+  url: https://auranetworksystems.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://auranetworksystems.com/privacy-policy
+
+apis:
+- name: Aura API
+  description: API reference for AURA Network Systems aviation communications services.
+  humanURL: https://auranetworksystems.com/infrastructure
+  baseURL: null
+  aid: auranetworksystems:aura-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Provider website lists API reference but no machine‑readable OpenAPI/AsyncAPI/GraphQL spec was found.
+  evidence:
+  - url: https://auranetworksystems.com/infrastructure
+    status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
