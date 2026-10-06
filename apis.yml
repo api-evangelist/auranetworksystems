@@ -22,7 +22,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-26'
 
-modified: '2026-09-26'
+modified: '2026-10-06'
 
 tags:
 - Aviation
@@ -38,6 +38,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://auranetworksystems.com/news?format=rss
+  type: BlogRSS
 - type: Hosts
   url: hosts/auranetworksystems-hosts.yml
 - type: Vendors
